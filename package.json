@@ -1,6 +1,6 @@
 {
   "name": "hmpo-config",
-  "version": "2.2.2",
+  "version": "3.0.0",
   "description": "Config loader",
   "main": "./lib/config.js",
   "scripts": {
