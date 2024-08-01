@@ -9,7 +9,8 @@
     "posttest": "npm run test:coverage && npm audit --production",
     "test:unit": "nyc --reporter=lcov --reporter=text-summary mocha ./test/unit --recursive --require ./test/unit/helper",
     "test:coverage": "nyc check-coverage",
-    "test:lint": "eslint ."
+    "test:lint": "eslint .",
+    "prepare": "husky install"
   },
   "author": "HMPO",
   "license": "MIT",
@@ -18,35 +19,30 @@
   },
   "dependencies": {
     "app-root-path": "^3.1.0",
-    "debug": "^4.3.4",
+    "debug": "^4.3.6",
     "deep-clone-merge": "^1.5.5",
     "js-yaml": "^4.1.0",
     "json5": "^2.2.3"
   },
   "devDependencies": {
-    "chai": "^4.3.7",
-    "eslint": "^8.39.0",
-    "husky": "^6.0.0",
-    "mocha": "^10.2.0",
-    "nyc": "^15.1.0",
-    "sinon": "^15.0.4",
+    "chai": "^4.5.0",
+    "eslint": "^8.57.0",
+    "husky": "^8.0.3",
+    "mocha": "^10.7.0",
+    "nyc": "^17.0.0",
+    "sinon": "^18.0.0",
     "sinon-chai": "^3.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UKHomeOffice/passports-config.git"
+    "url": "https://github.com/HMPO/hmpo-config.git"
   },
   "keywords": [
     "hmpo",
     "config"
   ],
   "bugs": {
-    "url": "https://github.com/UKHomeOffice/passports-config/issues"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
+    "url": "https://github.com/HMPO/hmpo-config/issues"
   },
   "nyc": {
     "all": true,
