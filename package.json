@@ -10,28 +10,29 @@
     "test:unit": "nyc --reporter=lcov --reporter=text-summary mocha ./test/unit --recursive --require ./test/unit/helper",
     "test:coverage": "nyc check-coverage",
     "test:lint": "eslint .",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "author": "HMPO",
   "license": "MIT",
   "engines": {
-    "node": ">=14"
+    "node": "20.x || 22.x"
   },
   "dependencies": {
     "app-root-path": "^3.1.0",
-    "debug": "^4.3.6",
+    "debug": "^4.3.7",
     "deep-clone-merge": "^1.5.5",
     "js-yaml": "^4.1.0",
     "json5": "^2.2.3"
   },
   "devDependencies": {
     "chai": "^4.5.0",
-    "eslint": "^8.57.0",
-    "husky": "^8.0.3",
-    "mocha": "^10.7.0",
-    "nyc": "^17.0.0",
-    "sinon": "^18.0.0",
-    "sinon-chai": "^3.7.0"
+    "eslint": "^9.12.0",
+    "husky": "^9.1.6",
+    "mocha": "^10.7.3",
+    "nyc": "^17.1.0",
+    "sinon": "^19.0.2",
+    "sinon-chai": "^3.7.0",
+    "globals": "^15.11.0"
   },
   "repository": {
     "type": "git",
@@ -48,7 +49,8 @@
     "all": true,
     "exclude": [
       "coverage/**",
-      "test/**"
+      "test/**",
+      "eslint.config.js"
     ],
     "lines": 100,
     "branches": 100,
