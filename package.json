@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "app-root-path": "^3.1.0",
-    "debug": "^4.3.7",
+    "debug": "4.3.7",
     "deep-clone-merge": "^1.5.5",
     "js-yaml": "^4.1.0",
     "json5": "^2.2.3"
